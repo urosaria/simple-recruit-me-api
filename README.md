@@ -30,8 +30,7 @@ Based on the notification type:
 
 ## Assumptions & Explanations
 #### 1. Overview  
-When you send a POST request with the following payload, a new record is created in the CANDIDATE and NOTIFICATION_WBH tables:
-Assumptions: 
+When you send a POST request with the following payload, a new record is created in the CANDIDATE and NOTIFICATION_WBH tables
 - Post request endpoint: https://localhost:8090/api/v1-0/recruiteme.json
   ```json
   //sample payload 
