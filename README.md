@@ -87,7 +87,7 @@ Upon successful request processing:
   - Example result screen for Notification mechanism
   ![](TestCase5-2.png)
      
-####3. Additional Notes  
+#### 3. Additional Notes  
 Unit tests have been added. Refer to the test directory for detailed test cases.
 
 ## Contact Information
