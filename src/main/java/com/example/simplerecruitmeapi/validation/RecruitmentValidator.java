@@ -2,6 +2,7 @@ package com.example.simplerecruitmeapi.validation;
 
 import com.example.simplerecruitmeapi.dto.CandidateDto;
 import com.example.simplerecruitmeapi.dto.NotificationWhbDto;
+import com.example.simplerecruitmeapi.enums.AuthenticationType;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
@@ -25,13 +26,11 @@ public class RecruitmentValidator implements Validator {
             return;
         }
 
-        switch (whbDto.getAuthentication()) {
-            case BASIC -> {
-                checkForEmptyField(errors, "notificationWhbDto.uid", whbDto.getUid(), "UID is required for BASIC authentication.");
-                checkForEmptyField(errors, "notificationWhbDto.pwd", whbDto.getPwd(), "PWD is required for BASIC authentication.");
-            }
-            case BEARER -> checkForEmptyField(errors, "notificationWhbDto.token", whbDto.getToken(), "Token is required for BEARER authentication.");
-            case NOAUTH, default -> {}
+        if (whbDto.getAuthentication() == AuthenticationType.BASIC) {
+            checkForEmptyField(errors, "notificationWhbDto.uid", whbDto.getUid(), "UID is required for BASIC authentication.");
+            checkForEmptyField(errors, "notificationWhbDto.pwd", whbDto.getPwd(), "PWD is required for BASIC authentication.");
+        } else if (whbDto.getAuthentication() == AuthenticationType.BEARER) {
+            checkForEmptyField(errors, "notificationWhbDto.token", whbDto.getToken(), "Token is required for BEARER authentication.");
         }
     }
 
