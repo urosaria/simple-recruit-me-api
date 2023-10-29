@@ -1,7 +1,7 @@
 # Simply Recruit Me API 
 
 ## Before Start
-This application was tested by Postman.
+This application was to handle a simple API, and it was tested by Postman.
 
 ## Configuration
 * JDK: JDK 17
