@@ -21,7 +21,8 @@ After starting, access the application at:
 | Feature          | Restful URI                | Method |
 |------------------|----------------------------|--------|
 | Candidate Create | /api/v1-0/recruiteme.json  | POST   |
-####2. Notification mechanism
+
+#### 2. Notification mechanism
 Based on the notification type:
 - MBL: Email is sent to the candidate's email address.
 - EML: SMS is dispatched to the candidate's mobile number.
