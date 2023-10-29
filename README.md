@@ -1,7 +1,7 @@
 # Simply Recruit Me API 
 
 ## Before Start
-This application was tested by Postman.
+This application was to handle a simple API, and it was tested by Postman.
 
 ## Configuration
 * JDK: JDK 17
@@ -21,7 +21,8 @@ After starting, access the application at:
 | Feature          | Restful URI                | Method |
 |------------------|----------------------------|--------|
 | Candidate Create | /api/v1-0/recruiteme.json  | POST   |
-####2. Notification mechanism
+
+#### 2. Notification mechanism
 Based on the notification type:
 - MBL: Email is sent to the candidate's email address.
 - EML: SMS is dispatched to the candidate's mobile number.
@@ -29,8 +30,7 @@ Based on the notification type:
 
 ## Assumptions & Explanations
 #### 1. Overview  
-When you send a POST request with the following payload, a new record is created in the CANDIDATE and NOTIFICATION_WBH tables:
-Assumptions: 
+When you send a POST request with the following payload, a new record is created in the CANDIDATE and NOTIFICATION_WBH tables
 - Post request endpoint: https://localhost:8090/api/v1-0/recruiteme.json
   ```json
   //sample payload 
@@ -87,7 +87,7 @@ Upon successful request processing:
   - Example result screen for Notification mechanism
   ![](TestCase5-2.png)
      
-####3. Additional Notes  
+#### 3. Additional Notes  
 Unit tests have been added. Refer to the test directory for detailed test cases.
 
 ## Contact Information
