@@ -24,8 +24,8 @@ After starting, access the application at:
 
 #### 2. Notification mechanism
 Based on the notification type:
-- MBL: Email is sent to the candidate's email address.
-- EML: SMS is dispatched to the candidate's mobile number.
+- MBL: SMS is dispatched to the candidate's mobile number.
+- EML: Email is sent to the candidate's email address.
 - WBH: A webhook notification is dispatched to the specified endpoint.
 
 ## Assumptions & Explanations
