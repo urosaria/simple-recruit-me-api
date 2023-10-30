@@ -50,8 +50,8 @@ When you send a POST request with the following payload, a new record is created
      }
   }
 Upon successful request processing:
-- MBL: Email is sent to the candidate's email address.
-- EML: SMS is dispatched to the candidate's mobile number.
+- MBL: SMS is dispatched to the candidate's mobile number.
+- EML: Email is sent to the candidate's email address.
 - WBH: A webhook notification is dispatched to the specified endpoint.
 
 #### 2. Test case
